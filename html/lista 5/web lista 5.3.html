@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>JavaScript</title>
+</head>
+<body>
+    <div class="box" style="width: 100%; height: 720px; background-color:darkslategrey; color: yellow;">
+
+    <p>Coordenadas da posiçao do mouse dentro da div.</p>
+    <p><code>X:</code> <span id="x">n/a</span></p>
+    <p><code>Y:</code> <span id="y">n/a</span></p>
+    
+    </div>
+    
+    <script>
+        
+        //escrever as coordenadas
+        const box = document.querySelector(".box");
+        const pageX = document.getElementById("x");
+        const pageY = document.getElementById("y");
+        
+        //pegar as coordenadas do mouse
+        function updateDisplay(event) {
+        pageX.innerText = event.pageX;
+        pageY.innerText = event.pageY;
+        }
+        
+        box.addEventListener("mousemove", updateDisplay, true);
+        box.addEventListener("mouseenter", updateDisplay, true);
+        box.addEventListener("mouseleave", updateDisplay, true);
+    </script>
+</body>
+</html>

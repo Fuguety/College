@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+</head>
+
+<body id="bd">
+    
+
+    <h1>Exercicio 10</h1>
+    
+    <div id="ls">Lista dos nomes: </div>
+
+
+
+    <script>
+            const nomes = [];
+            const n = prompt("Quantos nomes?");
+            
+            
+
+            let length = nomes.length
+
+            for(x = 0; x < n; x++){
+                var nome = prompt("Nome meu parcero:");
+
+                nomes.push(nome);
+            }
+            
+            nomes.sort();
+            nomes.reverse();
+
+            // imprime a lista de nomes
+            document.getElementById("ls").textContent += nomes;
+
+
+            
+    </script>
+      
+
+</body>
+</html>
+

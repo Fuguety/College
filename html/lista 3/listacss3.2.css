@@ -1,0 +1,28 @@
+h1{
+    color: blue;
+    position: absolute;
+    left: 50%;
+    text-decoration: underline;
+}
+
+body{
+    background-color: black;
+    background-image:
+    url(https://www.gov.uk/assets/static/govuk-opengraph-image-dade2dad5775023
+    b0568381c4c074b86318194edb36d3d68df721eea7deeac4b.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: -75%;
+}
+
+p{
+    color: blue;
+    font-size: medium;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    background-color: black;
+}

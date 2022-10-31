@@ -1,0 +1,22 @@
+!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>JavaScript</title>
+
+</head>
+
+<body>
+    <h1 id="titulo">Seja bem vindo à página do </h1>
+    
+    <h2><span id='tempo'></span></h2>
+    
+    <script>
+        var nome = prompt("Diga seu nome: ", "nome")
+        document.querySelector('#titulo').textContent += nome + "!";
+        var data = new Date();
+        document.getElementById('tempo').textContent += data;
+    </script>
+
+</body>
+</html>

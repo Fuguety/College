@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>JavaScript</title>
+</head>
+<body id="bd">
+    
+    <p id="p1" style="color: white; background-color: blue">Azul</p>
+    <button id="botao">Alto contraste</button>
+    <p id="p2" style="color: lime; background-color:orange;">Verde</p>
+    
+    <script>
+        const cores = ["black", "white"];
+        const coresp1 = ["blue", "white"];
+        const coresp1bc = ["black", "blue"];
+        const coresp2 = ["green", "lime"];
+        const coresp2bc = ["black", "orange"];
+        
+        let index = 0;
+        const btn = document.getElementById('botao');
+        const bd = document.getElementById("bd");
+        const p1 = document.getElementById("p1");
+        const p2 = document.getElementById("p2");
+        
+        btn.addEventListener('click', function clicarBotao() {
+        
+            p1.style.color = coresp1[index];
+            p1.style.backgroundColor = coresp1bc[index];
+            
+            p2.style.color = coresp2[index];
+            p2.style.backgroundColor = coresp2bc[index];
+            
+            btn.style.color = "white";
+            btn.style.backgroundColor = "Gray"
+            
+            bd.style.backgroundColor = cores[index];
+            index = index >= cores.length - 1 ? 0 : index + 1;
+        });
+    </script>
+</body>
+</html>

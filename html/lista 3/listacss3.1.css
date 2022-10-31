@@ -1,0 +1,20 @@
+h1{
+    color: aqua;
+    }
+    body{
+        background-color: black;
+        background-image:
+        url(https://www.gov.uk/assets/static/govuk-opengraph-image-dade2dad5775023b0568381c4c074b86318194edb36d3d68df721eea7deeac4b.png);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position-x: 50%;
+        background-position-y: -75%;
+    }
+    
+    p{
+        color: purple;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+        sans-serif;
+        font-size: medium;
+    }
+    
