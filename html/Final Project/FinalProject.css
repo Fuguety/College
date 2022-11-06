@@ -38,3 +38,13 @@ h1{
     height: 100%;
 }
 
+#world_map{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+map.hover{
+    background-color: red;
+}
