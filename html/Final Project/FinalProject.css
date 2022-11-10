@@ -17,10 +17,60 @@ div{
 
 button:hover{
 
-    background-color: brown;
-    cursor: pointer;
+        background-color: brown;
+        background-color: black;
+        background-size: 100%;
+    }
     
-}
+    div{
+        border-radius: 25px;
+        padding: 0.5%;
+        
+        
+        background-color: rgb(6, 6, 73);
+        width: 100%;
+        height: 100%;
+        
+    }
+    
+    
+    button:hover{
+    
+        background-color: brown;
+        cursor: pointer;
+        
+    }
+    
+    button{
+        border-radius: 7.5px;
+       
+        
+        color: blanchedalmond;
+        background-color: blue;
+        width: 30%;
+        height: 100%;
+    }
+    
+    h1{
+        color: rgb(230, 255, 4);
+        width: 100%;
+        height: 100%;
+    }
+    
+    #world_map{
+    
+        width: 100%;
+        height: 100%;
+    
+    }
+    
+    map.hover{
+        background-color: red;
+        cursor: pointer;
+    }
+    
+    
+
 
 button{
     border-radius: 7.5px;
@@ -48,3 +98,37 @@ h1{
 map.hover{
     background-color: red;
 }
+
+#search{
+    border-radius: 50px;
+    padding: 1%;
+    border-right: 100px;
+
+    background-color: rgb(172, 216, 216);
+    width: 100%;
+    height: 100%;
+}
+
+.grow {
+    padding: 5px 5px 5px 5px;
+    border-radius:10px;
+      height: 50px; 
+      width: 100%;
+      margin: 5px 1% 5px 1%; 
+      float: left; 
+      position: relative; 
+      transition:height 0.5s; 
+      -webkit-transition:height 0.5s; 
+      text-align: center;
+  
+  }
+
+  .grow:hover {
+      height: 200px;
+  }
+
+
+
+
+
+
