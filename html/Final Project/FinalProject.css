@@ -110,9 +110,11 @@ map.hover{
 }
 
 .grow {
+    font-family: system-ui;
+
     padding: 5px 5px 5px 5px;
     border-radius:10px;
-      height: 50px; 
+      height: 45px; 
       width: 100%;
       margin: 5px 1% 5px 1%; 
       float: left; 
@@ -123,12 +125,37 @@ map.hover{
   
   }
 
-  .grow:hover {
-      height: 200px;
+  .grow:hover{
+      height: 225px;
+      position: relative;
+      
   }
 
 
+a{
+    color: black;
+    font-weight: bold;
+}
+a:hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+}
 
+#hide{
+    width: 100%;
+    height: 50%;
+    opacity: 0;
+    background-color: rgb(172, 216, 216);
+    text-align: center;
+}
 
+#hide:hover{
+    opacity: 1;
+}
 
+p{
+    font-size: 25px;
+    font-weight: 300;
+    font-family: system-ui;
+}
 

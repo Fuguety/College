@@ -20,7 +20,6 @@
 
     
 
-    <p id="pp">Test</p>
 
     <div id="div1">
 
@@ -28,7 +27,7 @@
 
         <h1>Welcome to World Map</h1>
         
-        <p style="color: white;">Here you can select a continent and see his current time zone (UTC) and weather</p>
+        <p style="color: white;">Here you can select a continent and see his current time zone (UTC) and weather conditions</p>
         
 
         <button type="button" id="btn1"> Button 1</button> 
@@ -39,37 +38,42 @@
 
 
         <!--Real stuff beggins-->
-        <div style="background-color: rgb(11, 190, 250); color: black;">
+        <div style="background-color: rgb(11, 190, 250); color: black; padding: 5px 5px 25px 25px;">
 
-            <h3>Title 2</h3>
     
     
             
-            <p>
-                <img src="https://static.wikia.nocookie.net/callofduty/images/2/2e/TaskForce141_Logo_MWII.png/revision/latest?cb=20220525125045" style="width: 10%; height: 10%;">
-                Paragraphhhhhhh IT A    
-            
-            </p>
-            <p>Insert text here XDDDD</p>
-    
+            <p style="position: relative;    ">
+                The data used her can be attained at this link: <a href="https://open-meteo.com/en">Open-meteo.com</a>
+                <br>
+
+                <img src="https://static.vecteezy.com/system/resources/previews/011/125/363/original/cute-globe-cartoon-icon-png.png" style="width: 10%; height: 10%;">
+
+
+                This website is mainly used for simplifing the users search on Global Time and Weather from the important cities around the world. Feel free to use all the information gathered here,
+                but please put this link:  <a href="https://open-meteo.com/en">Open-meteo.com</a> as a referrence and credits.
+                
+            </p>    
 
         
 
         </div>
 
         <div class="grow">
-            <form id="search">Choose a specific city:
+            <form id="search">Choose a specific city to get it's time and weather conditions:
 
+            <div id="hide">
             <br>
-            <a href="https://www.w3schools.com/" id="na" class="hide" >North America</a><br>
-            <a href="https://www.w3schools.com/" id="ca" class="hide" >Central America</a><br>
-            <p id="sa" onclick="sa()" >South America</p><br>
-            <a href="https://www.w3schools.com/" id="af" class="hide" >Europe</a><br>
-            <a href="https://www.w3schools.com/" id="eu" class="hide" >Africa</a><br>
-            <a href="https://www.w3schools.com/" id="asia" class="hide" >Asia</a><br>
-            <a href="https://www.w3schools.com/" id="oc" class="hide" >Oceania</a><br>
-            <a href="https://www.w3schools.com/" id="ice" class="hide" >Iceland</a><br>
+            <a  onclick="na()"  id="na" >North America</a><br>
+            <a  onclick="ca()"  id="ca" >Central America</a><br>
+            <a  onclick="sa()"  id="sa" >South America</a><br>
+            <a  onclick="eu()"  id="af" >Europe</a><br>
+            <a  onclick="af()"  id="eu" >Africa</a><br>
+            <a  onclick="as()"  id="asia" >Asia</a><br>
+            <a  onclick="oc()"  id="oc" >Oceanic</a><br>
+            <a  onclick="ice()"  id="ice" >Iceland</a><br>
             <p id="demo"></p>
+            </div>
         
         </form>
             
@@ -116,28 +120,7 @@
 
 
     <script src="FinalProject.js"></script>
-    <script>
-        const xhttp = new XMLHttpRequest();
-    xhttp.onload = function () {
-
-        requestData = JSON.parse(this.responseText);
-        console.log(requestData);
-
-    }
-
-
-        function sa(){
-        let longitude = '-47.9292';
-        let latitude = '-15.7801';
-        xhttp.open("GET", `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m,relativehumidity_2m,rain,snowfall,cloudcover`, true);
-        xhttp.send();
-        console.log("latitude");
-        document.getElementById("sa").innerHTML = "oi";
-        }
-        </script>
+ 
 
 </body>
 </html>
-
-
-
