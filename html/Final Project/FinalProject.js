@@ -19,18 +19,21 @@ const xhttp = new XMLHttpRequest();
         xhttp.send();
         console.log();
 
-
+        document.getElementById("choose_city").innerHTML = "Nairobi";
     }
     
     function oc(){
 
         //Oceanic Canberra
+
         let latitude = '-35.2820';
         let longitude = '149.1286';
         xhttp.open("GET", `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m,relativehumidity_2m,rain,snowfall,cloudcover`, true);
         xhttp.send();
         console.log();
-        document.getElementById("oc").innerHTML = "Canberra";
+        
+        
+        document.getElementById("choose_city").innerHTML = "Canberra";
 
 
     }
@@ -38,17 +41,20 @@ const xhttp = new XMLHttpRequest();
     function as(){
 
         //Asia Tokyo
+
         let latitude = '35.6785';
         let longitude = '139.6823';
         xhttp.open("GET", `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m,relativehumidity_2m,rain,snowfall,cloudcover`, true);
         xhttp.send();
         console.log();
 
+        document.getElementById("choose_city").innerHTML = "Tokyo";
 
     
     }
 
     function eu(){
+
 
         //Europe London
         let latitude = '51.5002';
@@ -57,10 +63,12 @@ const xhttp = new XMLHttpRequest();
         xhttp.send();
         console.log();
 
+        document.getElementById("choose_city").innerHTML = "London";
 
     }
     
     function ca(){
+
 
         //Central America Ciudad de Mexico
         let latitude = '19.4271';
@@ -68,6 +76,8 @@ const xhttp = new XMLHttpRequest();
         xhttp.open("GET", `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m,relativehumidity_2m,rain,snowfall,cloudcover`, true);
         xhttp.send();
         console.log();
+
+        document.getElementById("choose_city").innerHTML = "Ciudad de Mexico";
 
 
     }
@@ -79,20 +89,24 @@ const xhttp = new XMLHttpRequest();
         let longitude = '-77.0241';
         xhttp.open("GET", `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m,relativehumidity_2m,rain,snowfall,cloudcover`, true);
         xhttp.send();
-        console.log();
+        
+        document.getElementById("choose_city").innerHTML = "Washington DC";
 
 
     }
 
     function sa(){
 
+
+
         //South America Brasilia DF
         let latitude = '-47.9292';
         let longitude = '-15.7801';
         xhttp.open("GET", `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m,relativehumidity_2m,rain,snowfall,cloudcover`, true);
         xhttp.send();
-        
-        document.getElementById("sa").innerHTML = "foda";
+
+
+        document.getElementById("choose_city").innerHTML = "Brasilia DF";
     }
 
     

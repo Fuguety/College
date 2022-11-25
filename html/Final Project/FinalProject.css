@@ -1,6 +1,7 @@
 body{
     background-color: black;
     background-size: 100%;
+    margin: 2.5%;
 }
 
 div{
@@ -9,7 +10,7 @@ div{
     
     
     background-color: rgb(6, 6, 73);
-    width: 100%;
+    width: 99%;
     height: 100%;
     
 }
@@ -18,60 +19,13 @@ div{
 button:hover{
 
         background-color: brown;
-        background-color: black;
         background-size: 100%;
-    }
-    
-    div{
-        border-radius: 25px;
-        padding: 0.5%;
-        
-        
-        background-color: rgb(6, 6, 73);
-        width: 100%;
-        height: 100%;
-        
-    }
-    
-    
-    button:hover{
-    
-        background-color: brown;
-        cursor: pointer;
-        
-    }
-    
-    button{
-        border-radius: 7.5px;
-       
-        
-        color: blanchedalmond;
-        background-color: blue;
-        width: 30%;
-        height: 100%;
-    }
-    
-    h1{
-        color: rgb(230, 255, 4);
-        width: 100%;
-        height: 100%;
-    }
-    
-    #world_map{
-    
-        width: 100%;
-        height: 100%;
-    
-    }
-    
-    map.hover{
-        background-color: red;
         cursor: pointer;
     }
     
     
-
-
+    
+    
 button{
     border-radius: 7.5px;
    
@@ -81,28 +35,20 @@ button{
     width: 30%;
     height: 100%;
 }
-
+    
 h1{
     color: rgb(230, 255, 4);
     width: 100%;
     height: 100%;
 }
 
-#world_map{
 
-    width: 100%;
-    height: 100%;
-
-}
-
-map.hover{
-    background-color: red;
-}
+    
 
 #search{
     border-radius: 50px;
     padding: 1%;
-    border-right: 100px;
+
 
     background-color: rgb(172, 216, 216);
     width: 100%;
@@ -111,25 +57,24 @@ map.hover{
 
 .grow {
     font-family: system-ui;
-
-    padding: 5px 5px 5px 5px;
-    border-radius:10px;
+    background-color: transparent;
+   
+    border-radius:0px;
       height: 45px; 
-      width: 100%;
-      margin: 5px 1% 5px 1%; 
-      float: left; 
-      position: relative; 
+      width: 97%;
+      float: center; 
+      position: center; 
       transition:height 0.5s; 
       -webkit-transition:height 0.5s; 
-      text-align: center;
+     
   
   }
 
-  .grow:hover{
-      height: 225px;
-      position: relative;
-      
-  }
+.grow:hover{
+    height: 75px;
+    position: relative;
+    
+}
 
 
 a{
@@ -146,7 +91,8 @@ a:hover{
     height: 50%;
     opacity: 0;
     background-color: rgb(172, 216, 216);
-    text-align: center;
+    transition:  0.5s;
+    text-align: center ;
 }
 
 #hide:hover{
@@ -159,3 +105,22 @@ p{
     font-family: system-ui;
 }
 
+#print_data1{
+    background-color: burlywood;
+
+}
+
+#more_info{
+
+    padding: 1%;
+    position: relative;
+    text-align: right;
+    border-radius: 10cm, 10cm, 10cm, 10cm;
+    text-decoration-line: underline;
+    color: rgb(39, 36, 36);
+    font-weight: 300;
+}
+
+#more_info:hover{
+    cursor: pointer;
+}

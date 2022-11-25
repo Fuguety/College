@@ -29,20 +29,16 @@
         
         <p style="color: white;">Here you can select a continent and see his current time zone (UTC) and weather conditions</p>
         
-
-        <button type="button" id="btn1"> Button 1</button> 
-        <button type="button" id="btn2"> Button 2</button> 
-        <button type="button" id="btn3"> Button 3</button> 
     
 
 
 
         <!--Real stuff beggins-->
-        <div style="background-color: rgb(11, 190, 250); color: black; padding: 5px 5px 25px 25px;">
+        <div style="background-color: rgb(11, 190, 250); color: black;">
 
     
     
-            
+            <!--Introduction-->
             <p style="position: relative;    ">
                 The data used her can be attained at this link: <a href="https://open-meteo.com/en">Open-meteo.com</a>
                 <br>
@@ -64,53 +60,34 @@
 
             <div id="hide">
             <br>
-            <a  onclick="na()"  id="na" >North America</a><br>
-            <a  onclick="ca()"  id="ca" >Central America</a><br>
-            <a  onclick="sa()"  id="sa" >South America</a><br>
-            <a  onclick="eu()"  id="af" >Europe</a><br>
-            <a  onclick="af()"  id="eu" >Africa</a><br>
-            <a  onclick="as()"  id="asia" >Asia</a><br>
-            <a  onclick="oc()"  id="oc" >Oceanic</a><br>
-            <a  onclick="ice()"  id="ice" >Iceland</a><br>
-            <p id="demo"></p>
+            <a  onclick="na()"  id="na" >Washington DC |</a>
+            <a  onclick="ca()"  id="ca" >| Ciudad de Mexico |</a>
+            <a  onclick="sa()"  id="sa" >| Brasilia DF |</a>
+            <a  onclick="eu()"  id="af" >| London |</a>
+            <a  onclick="af()"  id="eu" >| Nairobi |</a>
+            <a  onclick="as()"  id="asia" >| Tokyo |</a>
+            <a  onclick="oc()"  id="oc" >| Canberra </a>
             </div>
         
         </form>
             
-        <p></p>
 
         </div>
     
 
-
+        <div id="print_data1">
+            <br> 
+            <p id="choose_city">Choose a City First</p>
+            <p style="font-weight: 400;">Temperature in ºC: </p> <p>sexo</p>
+            <p href="" id="more_info">More information</p>
+            </div>
+    
     
     </div>
-
-   
-    <div>
-        
-        <img src="https://wallpapercave.com/wp/wp9513921.jpg" usemap="#image-map">
-
-        <map name="image-map">
-            
-            <area target="" id="sa" alt="South_America" title="South_America" href="www.google.com" coords="368,745,334,652,357,592,423,565,637,690,603,790,543,866,516,914,487,946,511,1027,444,987,424,909,412,783" shape="poly">
-            
-            <area target="" id="ca" alt="Central_America" title="Central_America" coords="354,483,303,504,249,497,191,511,235,537,341,598,392,529,449,526" shape="poly">
-            
-            <area target="" id="na" alt="North_America" title="North_America" href="www.google.com" coords="25,270,92,180,337,190,480,183,539,244,570,326,500,349,439,379,398,420,361,473,283,459,249,476,190,488,157,468,125,381,151,322,164,263,120,239" shape="poly">
-            
-            <area target="" id="af" alt="Africa" title="Africa" href="www.google.com" coords="812,407,911,398,967,432,1031,436,1063,476,1111,549,1131,576,1169,578,1158,604,1128,648,1092,692,1102,732,1165,749,1148,800,1126,827,1075,824,1043,853,991,882,957,887,928,719,909,658,896,614,858,607,790,609,745,561,746,492" shape="poly">
-            
-            <area target="" id="eu" alt="Europe" title="Europe" href="www.google.com" coords="981,177,941,192,971,221,983,250,998,260,1000,333,1024,360,990,383,954,358,936,344,937,356,954,377,954,399,930,400,922,377,915,361,902,360,886,360,873,372,861,387,847,394,825,397,803,399,798,387,802,361,827,352,830,328,815,319,805,301,798,291,810,272,837,267,856,289,873,294,896,285,896,275,900,263,890,246,876,245,873,231,889,225,916,209" shape="poly">
-            
-            <area target="" id="asia" alt="Asia" title="Asia" href="www.google.com" coords="966,181,1057,205,1137,195,1252,171,1352,159,1454,168,1578,176,1708,188,1759,214,1715,271,1698,302,1646,239,1612,256,1588,281,1627,302,1649,332,1666,383,1664,417,1636,429,1590,415,1566,429,1576,454,1590,483,1605,510,1608,536,1624,561,1630,580,1639,604,1654,624,1686,653,1725,666,1739,673,1729,697,1717,705,1700,683,1681,680,1669,660,1675,651,1641,650,1646,665,1620,668,1593,675,1590,658,1602,638,1619,634,1615,602,1605,587,1595,565,1588,545,1585,533,1593,516,1524,507,1513,509,1502,519,1508,541,1519,553,1529,582,1510,590,1475,568,1488,615,1502,643,1507,666,1531,693,1576,702,1599,705,1631,705,1648,705,1588,639,1590,615,1588,600,1553,622,1534,630,1534,659,1539,673,1568,673,1555,674,1526,713,1562,719,1580,720,1616,717,1628,720,1489,680,1463,652,1417,510,1448,539,1392,517,1365,527,1343,547,1343,566,1343,583,1331,588,1321,578,1297,546,1283,520,1225,476,1179,473,1153,461,1211,500,1194,519,1172,535,1148,546,1128,552,1116,530,1087,496,1055,442,1069,402,1024,393,1024,364,1057,357,1087,356,1055,340,1035,335,1014,286,994,237" shape="poly">
-            
-            <area target="" id="oc" alt="Oceania" title="Oceania" href="www.google.com" coords="1534,853,1558,892,1599,871,1633,880,1672,903,1707,924,1701,934,1756,951,1809,966,1838,961,1885,939,1907,914,1907,873,1880,888,1830,932,1794,938,1728,907,1742,899,1772,871,1781,856,1791,822,1777,783,1750,739,1770,714,1794,721,1806,724,1826,671,1806,656,1764,654,1749,680,1728,710,1730,760,1708,760,1684,726,1662,738,1632,756,1605,778,1589,790,1569,797,1549,805,1540,834" shape="poly">
-            
-            <area target="" id="ice" alt="Iceland" title="Iceland" href="www.google.com" coords="587,132,606,159,614,183,609,224,636,222,655,227,680,219,711,207,731,203,772,237,801,220,806,173,829,146,838,119,806,103,753,103,670,109,631,114" shape="poly">
-        </map>
     
-    </div>
+    
+
+
 
 
 
