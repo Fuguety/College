@@ -6,11 +6,11 @@ body{
 
 div{
     border-radius: 25px;
-    padding: 0.5%;
+    padding: 0.75%;
     
     
     background-color: rgb(6, 6, 73);
-    width: 99%;
+    width: 98%;
     height: 100%;
     
 }
@@ -87,7 +87,7 @@ a:hover{
 }
 
 #hide{
-    width: 100%;
+    width: 99%;
     height: 50%;
     opacity: 0;
     background-color: rgb(172, 216, 216);
