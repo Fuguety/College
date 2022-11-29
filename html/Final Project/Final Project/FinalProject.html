@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="FinalProject.css" type="text/css">
+
+
+
+
+    <title>World Map</title>
+
+</head>
+
+<body style="background-image: url(https://images8.alphacoders.com/115/1156137.jpg);">
+
+
+    
+
+
+    <div id="div1">
+
+        <!--Header-->
+
+        <h1>Welcome to World Map</h1>
+        
+        <p style="color: white;">Here you can select a continent and see his current time zone (UTC) and weather conditions</p>
+        
+    
+
+
+
+        <!--Real stuff beggins-->
+        <div style="background-color: rgb(11, 190, 250); color: black;">
+
+    
+    
+            <!--Introduction-->
+            <p style="position: relative;    ">
+                The data used her can be attained at this link: <a href="https://open-meteo.com/en" id="link">Open-meteo.com</a>
+                <br>
+
+                <img src="https://static.vecteezy.com/system/resources/previews/011/125/363/original/cute-globe-cartoon-icon-png.png" style="width: 10%; height: 10%;" alt="Earth's Globe">
+
+                
+                This website is mainly used for simplifing the users search on Global Time and Weather from the important cities around the world. Feel free to use all the information gathered here,
+                but please put this link:  <a href="https://open-meteo.com/en" id="link">Open-meteo.com</a> as a referrence and credits.
+                
+            </p>    
+
+        
+
+        </div>
+
+        <div class="grow">
+            <form id="search">Choose a specific city to get it's time and weather conditions:
+
+            <div id="hide">
+            <br>
+            <a  onclick="na()"  id="na" >Washington DC |</a>
+            <a  onclick="ca()"  id="ca" >| Ciudad de Mexico |</a>
+            <a  onclick="sa()"  id="sa" >| Brasilia DF |</a>
+            <a  onclick="eu()"  id="eu" >| London |</a>
+            <a  onclick="af()"  id="af" >| Nairobi |</a>
+            <a  onclick="as()"  id="asia" >| Tokyo |</a>
+            <a  onclick="oc()"  id="oc" >| Canberra </a>
+            </div>
+        
+        </form>
+            
+
+        </div>
+    
+
+        <div id="print_data1">
+            <br> 
+            <p id="choose_city">Choose a City First</p>
+            <p style="font-weight: 400;" id="temperature">Temperature in ºC: </p>
+            <a href="" id="more_info">More information</a>
+            </div>
+    
+    
+    </div>
+    
+    
+
+
+
+
+
+    
+    
+
+
+
+    <script src="FinalProject.js"></script>
+ 
+
+</body>
+</html>
