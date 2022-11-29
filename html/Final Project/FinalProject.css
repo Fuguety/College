@@ -116,7 +116,7 @@ h1{
 }
 
 p{
-    font-size: 25px;
+    font-size: 150%;
     font-weight: 300;
     font-family: system-ui;
 }
@@ -128,32 +128,20 @@ p{
 
 #more_info{
 
-    padding: 1%;
-    position: relative;
+    padding: 5%;
     border-radius: 10cm, 10cm, 10cm, 10cm;
     text-decoration-line: underline;
+    font-family: system-ui;
+    color: blue;
+    font-size: 100%;
     font-weight: 300;
 }
 
 #more_info:hover{
+    text-decoration-line: underline;
     cursor: pointer;
 }
 
-
-#print_data2{
-    background-color: rgba(133, 47, 7, 0.541);
-}
-
-#properties{
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    background-color: rgba(247, 0, 164, 0.616);
-    text-align: center;
-    width: 2%;
-    height: 1%;
-    
-}
 
 #na, #ca, #sa, #af, #eu, #asia, #oc{
     color: black;
@@ -165,11 +153,13 @@ p{
     cursor: pointer;
 }
 
-#links{
+#links1, #links2{
+    font-family: system-ui;
     text-align: right;
     font-size: 150%;
 }
 
-#links:hover{
+#links1:hover, #links2:hover{
+    font-family: system-ui;
     cursor: pointer;
 }
