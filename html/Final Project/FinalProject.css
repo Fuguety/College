@@ -1,6 +1,7 @@
 body{
     background-color: black;
     background-size: 100%;
+    background-repeat: no-repeat;
     margin: 2.5%;
     -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1.5s; /* Firefox < 16 */
@@ -93,11 +94,11 @@ h1{
 }
 
 
-#link{
+#link, #link1{
     color: black;
     font-weight: bold;
 }
-#link:hover{
+#link:hover, #link1:hover{
     text-decoration-line: underline;
     cursor: pointer;
 }
@@ -143,12 +144,12 @@ p{
 }
 
 
-#na, #ca, #sa, #af, #eu, #asia, #oc{
+#home, #na, #ca, #sa, #af, #eu, #asia, #oc{
     color: black;
     font-weight: bold;
 }
 
-#na:hover, #ca:hover, #sa:hover, #af:hover, #eu:hover, #asia:hover, #oc:hover{
+#home:hover, #na:hover, #ca:hover, #sa:hover, #af:hover, #eu:hover, #asia:hover, #oc:hover{
     text-decoration-line: underline;
     cursor: pointer;
 }

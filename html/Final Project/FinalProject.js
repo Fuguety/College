@@ -25,7 +25,7 @@ const xhttp = new XMLHttpRequest();
         xhttp.send();
         
         document.getElementById("choose_city").innerHTML = "Washington DC";
-        document.getElementById("more_info").href = "./Washigton DC.html";
+        document.getElementById("more_info").href = "./Washigton_DC.html";
 
     }
     
@@ -48,7 +48,7 @@ const xhttp = new XMLHttpRequest();
         console.log();
 
         document.getElementById("choose_city").innerHTML = "Ciudad de Mexico";
-        document.getElementById("more_info").href = "./Ciudad de Mexico.html";
+        document.getElementById("more_info").href = "./Ciudad_de_Mexico.html";
 
 
     }
@@ -71,7 +71,7 @@ const xhttp = new XMLHttpRequest();
         
         
         document.getElementById("choose_city").innerHTML = "Brasilia DF";
-        document.getElementById("more_info").href = "./Brasilia DF.html";
+        document.getElementById("more_info").href = "./Brasilia_DF.html";
 
         
     }
