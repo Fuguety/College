@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 // very basic class, just to show how Encapsulation works and how you can use functions inside classes
@@ -166,6 +167,13 @@ int main()
 	plane.acceleration = 15;
 	//Accelerate the car
 	plane.velocity = plane.accelerate(plane.velocity, plane.acceleration);
+
+
+	// Using new
+
+	Vehicle* boat = new Vehicle;
+	delete boat;
+
 
 
 	// Default class
