@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 using namespace std;
 
 // very basic class, just to show how Encapsulation works and how you can use functions inside classes
