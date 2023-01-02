@@ -45,7 +45,6 @@ const xhttp = new XMLHttpRequest();
         let longitude = '-99.1276';
         xhttp.open("GET", `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m&current_weather=true`, true);
         xhttp.send();
-        console.log();
 
         document.getElementById("choose_city").innerHTML = "Ciudad de Mexico";
         document.getElementById("more_info").href = "./Ciudad_de_Mexico.html";
@@ -58,7 +57,6 @@ const xhttp = new XMLHttpRequest();
         xhttp.onload = function () {
 
             requestData = JSON.parse(this.responseText);
-            console.log(requestData["current_weather"]["temperature"]);
             document.getElementById("temperature").innerHTML = "Temperature in ºC: " + requestData["current_weather"]["temperature"];
 
         }
@@ -81,7 +79,6 @@ const xhttp = new XMLHttpRequest();
         xhttp.onload = function () {
 
             requestData = JSON.parse(this.responseText);
-            console.log(requestData["current_weather"]["temperature"]);
             document.getElementById("temperature").innerHTML = "Temperature in ºC: " + requestData["current_weather"]["temperature"];
     
         }
@@ -91,7 +88,6 @@ const xhttp = new XMLHttpRequest();
         let longitude = '-0.1262';
         xhttp.open("GET", `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m&current_weather=true`, true);
         xhttp.send();
-        console.log();
 
         document.getElementById("choose_city").innerHTML = "London";
         document.getElementById("more_info").href = "./London.html";
@@ -104,7 +100,6 @@ const xhttp = new XMLHttpRequest();
         xhttp.onload = function () {
 
             requestData = JSON.parse(this.responseText);
-            console.log(requestData["current_weather"]["temperature"]);
             document.getElementById("temperature").innerHTML = "Temperature in ºC: " + requestData["current_weather"]["temperature"];
     
         }
@@ -114,7 +109,6 @@ const xhttp = new XMLHttpRequest();
         let longitude = '36.82';
         xhttp.open("GET", `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m&current_weather=true`, true);
         xhttp.send();
-        console.log();
 
         document.getElementById("choose_city").innerHTML = "Nairobi";
         document.getElementById("more_info").href = "./Nairobi.html";
@@ -125,7 +119,6 @@ const xhttp = new XMLHttpRequest();
         xhttp.onload = function () {
 
             requestData = JSON.parse(this.responseText);
-            console.log(requestData["current_weather"]["temperature"]);
             document.getElementById("temperature").innerHTML = "Temperature in ºC: " + requestData["current_weather"]["temperature"];
     
         }
@@ -136,7 +129,6 @@ const xhttp = new XMLHttpRequest();
         let longitude = '139.6823';
         xhttp.open("GET", `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m&current_weather=true`, true);
         xhttp.send();
-        console.log();
 
         document.getElementById("choose_city").innerHTML = "Tokyo";
         document.getElementById("more_info").href = "./Tokyo.html";
@@ -149,7 +141,6 @@ const xhttp = new XMLHttpRequest();
         xhttp.onload = function () {
 
             requestData = JSON.parse(this.responseText);
-            console.log(requestData["current_weather"]["temperature"]);
             document.getElementById("temperature").innerHTML = "Temperature in ºC: " + requestData["current_weather"]["temperature"];
     
         }
@@ -159,7 +150,6 @@ const xhttp = new XMLHttpRequest();
         let longitude = '149.1286';
         xhttp.open("GET", `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m&current_weather=true`, true);
         xhttp.send();
-        console.log();
         
         
         document.getElementById("choose_city").innerHTML = "Canberra";
