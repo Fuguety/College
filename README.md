@@ -7,5 +7,6 @@
 **Everything is separated in folders for better understanting**
 
 - OOP -> uses C++ language with Object Oriented programming
+- Html -> Codes using htmt, css and js
 - Python -> codes written in Python
 
