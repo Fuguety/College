@@ -33,7 +33,6 @@ const xhttp = new XMLHttpRequest();
         xhttp.onload = function () {
 
             requestData = JSON.parse(this.responseText);
-            console.log(requestData["current_weather"]["temperature"]);
             document.getElementById("temperature").innerHTML = "Temperature in ºC: " + requestData["current_weather"]["temperature"];
     
         }
