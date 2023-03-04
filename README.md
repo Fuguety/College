@@ -11,7 +11,7 @@
 - Html -> Codes using htmt, css and js
 - Html/Final Project -> Final project that creates a website using html, featuring API, CSS and JS
 - Python -> codes written in Python
-- Data Structure
+- Data Structure -> Codes that creates data structures (sorting, lists, etc.)
 
 <br><br>
 
