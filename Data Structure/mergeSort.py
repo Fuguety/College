@@ -39,7 +39,6 @@ def mergeSort(array):
             w += 1
 
 
-
 array = [10, 0, 11, 87, 21, 2, 22]
 
 mergeSort(array)
