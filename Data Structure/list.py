@@ -17,7 +17,7 @@ def search(v):
     ls = List()
     if v < 0:
         print("please insert a value higher or equal to 0")
-    
+
     else:
         try:
             print(ls.arr[v - 1])
@@ -46,13 +46,13 @@ def lastElement():
     ls = List()
     check = checkArray()
     try:
-        if(check == False):
+        if (check == False):
             print("The list is empty")
-        
+
         else:
             x = arrLenght() - 1
             print(f"Last element of the list is: {ls.arr[x]}")
-                    
+
     except:
         print("Error")
 
@@ -77,24 +77,24 @@ while (True):
         elif (x == "2"):
             quantity = arrLenght()
             print(f"The current list has {quantity} elements")
-            
+
             print("Wich element you want to see? ")
             element = input()
 
             search(int(element))
-        
+
         elif (x == "3"):
             check = checkArray()
             print(check)
-        
+
         elif (x == "4"):
             getSize = arrLenght()
             print(f"Size of the List: {getSize}")
-        
+
         elif (x == "5"):
             lastElement()
-            
-        elif(x == ""):
+
+        elif (x == ""):
             break
 
         else:
