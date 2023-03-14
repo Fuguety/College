@@ -15,31 +15,46 @@ def printList():
 
 def search(v):
     ls = List()
-    try:
-        x = ls.arr[v]
-        print(x)
-    except:
-        print("List is empty")
+    if v < 0:
+        print("please insert a value higher or equal to 0")
+    
+    else:
+        try:
+            print(ls.arr[v - 1])
+        except:
+            print("Element not found")
 
 
 def checkArray():
     ls = List()
-    if ls.arr[0] == "":
-        return True
-    else:
+    try:
+        if ls.arr[0] == "":
+            return False
+        else:
+            return True
+    except:
         return False
 
 
 def arrLenght():
     ls = List()
-    x = ls.arr.lenght()
+    x = len(ls.arr)
     return x
 
 
 def lastElement():
     ls = List()
-    x = arrLenght()
-    print(ls.arr[x])
+    check = checkArray()
+    try:
+        if(check == False):
+            print("The list is empty")
+        
+        else:
+            x = arrLenght() - 1
+            print(f"Last element of the list is: {ls.arr[x]}")
+                    
+    except:
+        print("Error")
 
 
 # main
@@ -48,7 +63,7 @@ print(" Welcome to List manipulation program \n Please inster a number to choose
 
 while (True):
     try:
-        print(" 1 - add element to list \n 2 - search element on list \n 3 - check if list is empty \n 4 - get the size of the list \n 5 - get the last element \n Enter - Exit program")
+        print("\n 1 - add element to list \n 2 - search element on list \n 3 - check if list is empty \n 4 - get the size of the list \n 5 - get the last element \n Enter - Exit program")
 
         print(f"\nCurrent list: {ls.arr}")
 
@@ -66,13 +81,15 @@ while (True):
             print("Wich element you want to see? ")
             element = input()
 
-            search(element)
+            search(int(element))
         
         elif (x == "3"):
-            print(checkArray())
+            check = checkArray()
+            print(check)
         
         elif (x == "4"):
-            print(arrLenght)
+            getSize = arrLenght()
+            print(f"Size of the List: {getSize}")
         
         elif (x == "5"):
             lastElement()
