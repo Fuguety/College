@@ -1,7 +1,6 @@
 class List:
     arr = []
 
-
 def insert(v):
     ls = List()
     ls.arr.insert(0, v)
