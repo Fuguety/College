@@ -6,7 +6,6 @@ class Vehicle(Engine):
 
 
 
-
 #just neet to change wich Class you want to inspect
 print(dir(Vehicle))
 
