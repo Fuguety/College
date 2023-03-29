@@ -3,7 +3,7 @@
 using namespace std;
 
 class List {
-    private:
+    public:
         struct Node {
             int data;
             Node* prev;
