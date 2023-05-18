@@ -1,0 +1,50 @@
+1)
+
+R1 <- sigma den_disciplina = "BDD1" (Disciplina)
+R2 <- sigma den_disciplina = "PGM3" (Disciplina)
+R3 <- R1 junçao Historico
+R4 <- R2 junçao Historico
+R5 <- sigma nota > 7 (R3)
+R6 <- sigma nota > 7 (R4)
+R7 <- pi #num_matricula(R5)
+R8 <- pi #num_matricula(R6)
+R9 <- R7 interseçao R8
+R10 <- R9 junçao Aluno
+
+pi nom_aluno(R10)
+
+versâo prof (a de cima esta correta tbm)
+
+R1 <- sigma den_disciplina = "BDD1" (Disciplina)
+R2 <- sigma den_disciplina = "PGM3" (Disciplina)
+R3 <- sigma vlr_nota > 7 (Historico)
+R4 <- R1 junçao R3
+R5 <- R2 junçao R3
+R6 <- pi num_matricula(R4)
+R7 <- pi num_matricula(R5)
+R8 <- R6 interseçao R7
+R9 < R8 junçao Aluno
+
+pi nom_aluno(R9)
+
+
+
+================================================
+
+2)
+
+R1 <- sigma vlr_ch_horaria > "72 horas" (Disciplina)
+R2 <- sigma vlr_nota > 6 (Historico)
+R3 <- R2 junçao R1
+R4 <- Aluno divido R3
+
+pi nom_aluno(R4)
+
+================================================
+
+3)
+
+R1 <- Aluno junçao Historico
+R2 <- sigma vlr_nota > 5 (R1)
+R3 <- 
+
