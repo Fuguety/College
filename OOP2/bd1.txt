@@ -23,7 +23,7 @@ R5 <- R2 junçao R3
 R6 <- pi num_matricula(R4)
 R7 <- pi num_matricula(R5)
 R8 <- R6 interseçao R7
-R9 < R8 junçao Aluno
+R9 <- R8 junçao Aluno
 
 pi nom_aluno(R9)
 
@@ -45,6 +45,31 @@ pi nom_aluno(R4)
 3)
 
 R1 <- Aluno junçao Historico
-R2 <- sigma vlr_nota > 5 (R1)
-R3 <- 
+R2 <- sigma vlr_nota > 5
+R3 <- Disciplina junçao R2
 
+pi den_disciplina
+
+================================================
+
+4)
+
+R1 <- sigma vlr_ch_horaria > 60 (Disciplina)
+R2 <- sigma vlr_nota > 8 (Historico)
+R3 <- R1 junçao R2
+R4 <- R3 junçao Aluno
+R5 <- sigma nom_municipio = "Blumenau" (Municipio)
+R6 <- R5 junçao Aluno
+
+pi nome_aluno
+
+================================================
+
+5)
+
+R1 <- sigma pct_frequencia > 75 (Historico)
+R2 <- sigma vlr_nota > 7 (Historico)
+R3 <- R1 interseçao R2
+R4 <- R3 junçao Aluno
+
+pi nom_aluno
