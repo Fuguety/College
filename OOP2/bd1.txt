@@ -64,9 +64,20 @@ R2 <- sigma vlr_nota > 8 (Historico)
 R3 <- R1 junçao R2
 R4 <- R3 junçao Aluno
 R5 <- sigma nom_municipio = "Blumenau" (Municipio)
-R6 <- R5 junçao Aluno
+R6 <- R5 junçao R4
 
-pi nome_aluno
+pi nome_aluno (R6)
+
+versao do professor (a de cima tambem esta correta)
+
+R1 <- sigma nom_municipio = "Blumenau" (Municipio)
+R2 <- Aluno junçao R1
+R3 <- sigma vlr_ch_horaria > 60 (Disciplina)
+R4 <- R3 junçao Historico
+R5 <- sigma vlr_nota > 8 (R4)
+R6 <- R2 junçao R5
+
+pi nom_aluno (R7)
 
 ================================================
 
