@@ -83,9 +83,19 @@ pi nom_aluno (R7)
 
 5)
 
-R1 <- sigma pct_frequencia > 75 (Historico)
-R2 <- sigma vlr_nota > 7 (Historico)
-R3 <- R1 interseçao R2
-R4 <- R3 junçao Aluno
+R1 <- sigma vlr_nota > 7 ^ pct_frequencia > 75 (Historico)
+R2 <- sigma vlr_nota <= 7 v pct_frequencia <= 75 (Historico)
+R3 <- pi num_matricula (R1)
+R4 <- pi num_matricula (R2)
+R5 <- R4 - R3
+R6 < R5 junçao Aluno
 
-pi nom_aluno
+pi nom_aluno (R6)
+
+Symbols:
+
+junçao = joint = ><
+sigma = selection
+pi = projection
+^ = && = and
+v = || = or
