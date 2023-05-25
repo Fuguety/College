@@ -33,12 +33,14 @@ pi nom_aluno(R9)
 
 2)
 
-R1 <- sigma vlr_ch_horaria > "72 horas" (Disciplina)
-R2 <- sigma vlr_nota > 6 (Historico)
-R3 <- R2 junçao R1
-R4 <- Aluno divido R3
+R1 <- sigma vlw_ch_horaria > "72 horas" (Disciplina)
+R2 <- pi cod_disciplina (R1)
+R3 <- sigma vlr_nota > 6 (Historico)
+R4 <- pi cod_matricula, cod_disciplina (R3)
+R5 <- R4 dividido por R2
+R6 <- R5 junçao R1
 
-pi nom_aluno(R4)
+pi nom_aluno (R6)
 
 ================================================
 
