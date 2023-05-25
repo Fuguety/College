@@ -46,11 +46,14 @@ pi nom_aluno (R6)
 
 3)
 
-R1 <- Aluno junçao Historico
-R2 <- sigma vlr_nota > 5
-R3 <- Disciplina junçao R2
+R1 <- sigma vlr_nota > 5 (Historico)
+R2 <- sigma vlr_nota <= 5 (Historico)
+R3 <- pi cod_disciplina (R1)
+R4 <- pi cod_disciplina (R2)
+R5 <- R3 - R4
+R6 <- Disciplina junçao R5
 
-pi den_disciplina
+pi den_disciplina (R6)
 
 ================================================
 
