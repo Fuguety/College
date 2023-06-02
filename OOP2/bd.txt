@@ -1,6 +1,6 @@
 Exercicio 1:
 
-{ t.denominacao | Projeto(t) ^ (para todos 'a')( Alocacao(a) ^( (existe 'c')Colaborador(c) ^
+{ t.denominacao | Projeto(t) ^ (para todos 'a')( Alocacao(a) ^ ( (existe 'c')Colaborador(c) ^
   t.codigo = a.codigo ^ a.cpf = c.cpf ^ a.horas > 20 )) }
 
   Nomes: Lucas Azevedo, Fabio Junior, Gabrielli Danker
