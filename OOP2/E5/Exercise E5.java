@@ -1,4 +1,4 @@
-Exercício E5- POO II
+//Exercício E5- POO II
 
 import java.lang.reflect.Field;
 import java.util.Scanner;
@@ -55,4 +55,4 @@ public class Sandy {
     }
 }
 
-Essas modificações permitem que o usuário tenha uma visão dos atributos disponíveis antes de tomar a decisão de qual atributo valorar.
+//Essas modificações permitem que o usuário tenha uma visão dos atributos disponíveis antes de tomar a decisão de qual atributo valorar.
