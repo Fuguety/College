@@ -1,0 +1,12 @@
+Exercício E6- POO II
+
+a) criar uma classe em Java, com pelo menos um método e dois atributos
+b) fazer a geração do arquivo .jar (implantável); fazer a documentação do conteúdo do arquivo .jar (classe, métodos, atributos)
+c) criar um programa em java que utilize o .jar que outro colega fez
+Os dois programas devem estar disponíveis na sua resposta (o seu programa java e o .jar que você utilizou, referenciado)
+
+7) Pergunta: seria possível usar reflexão para "descobrir" (engenharia reversa) quais classes, métodos e atributos existem no arquivo .jar que está disponibilizado?
+Resposta: 
+Sim, é possível usar reflexão para "descobrir" informações sobre classes, métodos e atributos em um arquivo JAR.
+
+Um arquivo JAR (Java ARchive) é um arquivo compactado que contém classes Java, recursos e metadados. A reflexão em Java permite que você obtenha informações sobre essas classes e seus membros em tempo de execução.

@@ -1,0 +1,41 @@
+Exercício E1- POO II
+
+import java.lang.reflect.Method;
+
+public class ReflexaoExemplo {
+
+    public static void main(String[] args) {
+        // Obtendo informações sobre a classe
+        Class<?> classe = MinhaClasse.class;
+        String nomeDaClasse = classe.getName();
+        System.out.println("Nome da classe: " + nomeDaClasse);
+
+        // Obtendo informações sobre os métodos da classe
+        Method[] metodos = classe.getDeclaredMethods();
+        System.out.println("Métodos da classe:");
+        for (Method metodo : metodos) {
+            System.out.println(" - " + metodo.getName());
+        }
+    }
+}
+
+class MinhaClasse {
+    public void meuMetodo1() {
+        System.out.println("Executando o método 1");
+    }
+
+    public void meuMetodo2() {
+        System.out.println("Executando o método 2");
+    }
+}
+
+A reflexão é uma poderosa ferramenta que permite, por exemplo, criar instâncias de classes dinamicamente, invocar métodos em tempo de execução e acessar/modificar propriedades privadas de objetos. Ela é útil em cenários onde é necessário inspecionar ou modificar o comportamento de classes em tempo de execução, como frameworks de injeção de dependência e serialização/desserialização de objetos.
+
+Referências:
+
+    -Oracle Java Documentation: Reflection - https://docs.oracle.com/javase/tutorial/reflect/
+    -Baeldung: Guide to Java Reflection - https://www.baeldung.com/java-reflection
+
+
+
+
