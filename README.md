@@ -12,7 +12,7 @@
 - Html/Final Project -> Final project that creates a website using html, featuring API, CSS and JS
 - Python -> codes written in Python
 - Data Structure -> Codes that creates data structures (sorting, lists, etc.)
-- Data Banks -> Exercises from data bank classes
+- DataBanks -> Exercises from data bank classes (ps: exercises are in portuguese Brazil)
 
 <br><br>
 
