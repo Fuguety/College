@@ -1,0 +1,18 @@
+Lucas Azevedo - BCC
+
+legenda:
+e: Junçao
+E: Existe
+A: Para todo
+V: ou
+
+1)
+
+a) { c.nome | CLIENTE(c) e (Es)(CORRIDA(s) e c.cpf = s.cpf e s.data >= 01/01/2020 e s.data <= 31/12/2020)}
+
+b) { t.placa | TAXI(t) e (Ec)(CORRIDA(c) e t.placa = c.placa e ((c.data >= 01/01/2021 e c.data <= 31/12/2021) V (c.data >= 01/01/2023 e c.data <= 31/12/2023)))}
+
+c) { c.nome | CLIENTE(c) e (At)(TAXI(t) e t.marca=’Fiat’ e (Es)(CORRIDA(s) e t.placa = s.placa e c.cpf = s.cpf))}
+
+d) { t.placa | TAXI(t) e (Ac)(CLIENTE(c) e (Es)(CORRIDA(s) e s.cpf = c.cpf e s.placa = t.placa))}
+
