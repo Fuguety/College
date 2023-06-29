@@ -34,4 +34,4 @@
 ![windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
 <br><br>
-*PS: Some of the codes are made in portuguese 😄*
+*PS: Some of the codes are made in portuguese Brazil 😄*
